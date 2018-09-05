@@ -1,0 +1,17 @@
+@import 'variables';
+
+.Sidebar {
+	&__item {
+		display: block;
+		padding: 20px;
+
+		&, &:hover, &:active, &:visited, &:focus {
+			text-decoration: none;
+			color: white;
+		}
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
