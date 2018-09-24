@@ -7,4 +7,11 @@
 		font-size: 16pt;
 		font-weight: 500;
 	}
+
+	&__primeiros-passos {
+		&__img {
+			height: 300px;
+			background-size: contain;
+		}
+	}
 }

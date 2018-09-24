@@ -1,5 +1,7 @@
+@import 'variables';
+
 .Layout {
   &__main {
-    display: grid;
+    margin-top: $navbar_height;
   }
 }

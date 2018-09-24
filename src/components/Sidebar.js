@@ -1,48 +1,44 @@
 import React, { Component } from 'react';
-import { stack as Menu } from 'react-burger-menu';
 import { Link } from 'react-router-dom';
+import ReactSidebar from 'react-sidebar';
 
 import './Sidebar.scss';
 
-const menuStyle = {
-    bmMenuWrap: {
-        transition: '.3s ease'
-    }
-};
+const isScreenLargeEnough = window.matchMedia("(min-width: 768px)");
 
 class Sidebar extends Component {
     constructor(props) {
         super(props);
+        this.screenChanged = this.screenChanged.bind(this);
+        isScreenLargeEnough.addListener(this.screenChanged);
         this.state = {
-            isMenuOpen: false
+            docked: isScreenLargeEnough.matches,
         };
     }
 
-    handleStateChange(state) {
+    screenChanged() {
         this.setState({
-            isMenuOpen: state.isOpen
-        });
-    }
-
-    closeMenu() {
-        this.setState({
-            isMenuOpen: false
+            docked: isScreenLargeEnough.matches,
         });
     }
 
     render() {
-        let { pageWrapId, outerContainerId } = this.props;
         return (
-            <Menu isOpen={this.state.isMenuOpen} onStateChange={(state) => this.handleStateChange} styles={menuStyle} customCrossIcon={false} pageWrapId={pageWrapId} outerContainerId={outerContainerId} >
-            <div>
-                <Link onClick={() => this.closeMenu()} className="Sidebar__item" to="/">Primeiros Passos</Link>
-                <Link onClick={() => this.closeMenu()} className="Sidebar__item" to="/">Cardápio do RU</Link>
-                <Link onClick={() => this.closeMenu()} className="Sidebar__item" to="/">Mapa do Politécnico</Link>
-                <Link onClick={() => this.closeMenu()} className="Sidebar__item -small" to="/">Calendário Acadêmico</Link>
-            </div>
-			</Menu>
+            <ReactSidebar sidebar={<SidebarContent />} open={this.props.open} docked={false} onSetOpen={this.props.onSetOpen} touchHandleWidth={30} dragToggleDistance={20} sidebarClassName="Sidebar">
+            {this.props.children}
+			</ReactSidebar>
         );
     }
 }
 
 export default Sidebar;
+
+const SidebarContent = () => (
+    <div>
+        <h2 className="Sidebar__title">CAAD</h2>
+        <Link onClick={() => this.closeSidebar()} className="Sidebar__item" to="/">Primeiros Passos</Link>
+        <Link onClick={() => this.closeSidebar()} className="Sidebar__item" to="/">Cardápio do RU</Link>
+        <Link onClick={() => this.closeSidebar()} className="Sidebar__item" to="/">Mapa do Politécnico</Link>
+        <Link onClick={() => this.closeSidebar()} className="Sidebar__item -small" to="/">Calendário Acadêmico</Link>
+    </div>
+);
