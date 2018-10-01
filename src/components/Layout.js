@@ -21,12 +21,8 @@ export default class Layout extends Component {
 		})
 	}
 
-	openSidebar() {
-		this.setSidebarOpen(true);
-	}
-
-	closeSidebar() {
-		this.setSidebarOpen(false);
+	toggleSidebar() {
+		this.setSidebarOpen(!this.state.sidebarOpen);
 	}
 
 	render() {
@@ -34,7 +30,7 @@ export default class Layout extends Component {
 			<div className="Layout">
 				<CenteredBackgroundImage src={logo} />
 				<Sidebar open={this.state.sidebarOpen} onSetOpen={(state) => this.setSidebarOpen(state)}>
-				<Navbar onClickBurger={() => this.openSidebar()} />
+				<Navbar onClickBurger={() => this.toggleSidebar()} />
 					<main className="Layout__main">
 						{this.props.children}
 					</main>

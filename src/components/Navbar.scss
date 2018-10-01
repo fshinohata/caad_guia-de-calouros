@@ -1,8 +1,16 @@
 @import 'variables';
 
 .Navbar {
-	height: $navbar_height;
-	background-color: $navbar_background_color;
-	display: flex;
-	align-items: center;
+	flex-grow: 1;
+
+	&__AppBar {
+		background-color: $purple !important;
+
+	}
+
+	&__IconButton {
+		&:focus {
+			outline: none !important;
+		}
+	}
 }

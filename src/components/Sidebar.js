@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import ReactSidebar from 'react-sidebar';
+import links from '../links';
 
 import './Sidebar.scss';
 
@@ -23,8 +24,9 @@ class Sidebar extends Component {
     }
 
     render() {
+        const { open, onSetOpen } = this.props;
         return (
-            <ReactSidebar sidebar={<SidebarContent />} open={this.props.open} docked={false} onSetOpen={this.props.onSetOpen} touchHandleWidth={30} dragToggleDistance={20} sidebarClassName="Sidebar">
+            <ReactSidebar sidebar={<SidebarContent onSetOpen={onSetOpen} />} open={open} docked={false} onSetOpen={onSetOpen} touchHandleWidth={30} dragToggleDistance={20} sidebarClassName="Sidebar">
             {this.props.children}
 			</ReactSidebar>
         );
@@ -33,12 +35,12 @@ class Sidebar extends Component {
 
 export default Sidebar;
 
-const SidebarContent = () => (
-    <div>
-        <h2 className="Sidebar__title">CAAD</h2>
-        <Link onClick={() => this.closeSidebar()} className="Sidebar__item" to="/">Primeiros Passos</Link>
-        <Link onClick={() => this.closeSidebar()} className="Sidebar__item" to="/">Cardápio do RU</Link>
-        <Link onClick={() => this.closeSidebar()} className="Sidebar__item" to="/">Mapa do Politécnico</Link>
-        <Link onClick={() => this.closeSidebar()} className="Sidebar__item -small" to="/">Calendário Acadêmico</Link>
+const SidebarContent = ({ onSetOpen }) => (
+    <div className="Sidebar__items">
+        <Link onClick={() => onSetOpen(false)} className="Sidebar__item" to="/">Página Inicial</Link>
+        <Link onClick={() => onSetOpen(false)} className="Sidebar__item" to="/primeiros-passos">Primeiros Passos</Link>
+        <a onClick={() => onSetOpen(false)} className="Sidebar__item" href={links.cardapioPolitecnico}>Cardápio do RU</a>
+        {/*<Link onClick={() => onSetOpen(false)} className="Sidebar__item" to="/">Mapa do Politécnico</Link>*/}
+        <a onClick={() => onSetOpen(false)} className="Sidebar__item -small" href={links.calendarioCEPE}>Calendário Acadêmico</a>
     </div>
 );

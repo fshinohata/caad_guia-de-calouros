@@ -1,0 +1,30 @@
+.FancyCard {
+	margin-bottom: 30px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&__Card {
+		min-height: 560px;
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	&__CardActionArea {
+		width: 100%;
+		flex: 9;
+	}
+
+	&__CardActions {
+		width: 100%;
+		min-height: 50px;
+		flex: 1;
+	}
+
+	&__CardMedia {
+		height: 300px;
+		background-size: contain !important;
+	}
+}

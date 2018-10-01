@@ -1,12 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
 * {
 	user-select: none;
+}
+
+body, html {
+  font-family: 'Lato', sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
   background-color: transparent;
+}
+
+a, a:hover, a:focus, a:active, a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+.position-relative {
+	position: relative;
 }
 
 .burger {
@@ -31,5 +45,11 @@ body {
 		&:last-child {
 			margin-bottom: 0;
 		}
+	}
+}
+
+@for $i from 1 to 101 {
+	.flex-#{$i} {
+		flex: $i;
 	}
 }

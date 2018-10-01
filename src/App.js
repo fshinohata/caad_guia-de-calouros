@@ -1,23 +1,28 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
+import links from './links';
+
+// import { AnimatedSwitch } from './components/Animations';
 import Layout from './components/Layout';
 import Home from './pages/home/Home';
+import FirstSteps from './pages/firstSteps/FirstSteps';
 
 class App extends Component {
-	constructor(props) {
-		super(props);
-
-		this.baseUrl = window.location.pathname;
-	}
-
 	render() {
+		const basename = window.location.pathname;
 		return (
-			<BrowserRouter basename={this.baseUrl}>
+			<Router basename={basename}>
 				<Layout>
-					<Route exact path="/" component={Home} />
+					{/*<AnimatedSwitch>*/}
+					<Switch>
+						<Route exact path={links.home} component={Home} />
+						<Route exact path={links.primeirosPassos} component={FirstSteps} />
+						<Route render={() => <div>Not Found</div>} />
+					</Switch>
+					{/*</AnimatedSwitch>*/}
 				</Layout>
-			</BrowserRouter>
+			</Router>
 		);
 	}
 }

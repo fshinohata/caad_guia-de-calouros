@@ -1,53 +1,69 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'reactstrap';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardHeader from '@material-ui/core/CardHeader';
-import CardMedia from '@material-ui/core/CardMedia';
+import { Container, Row } from 'reactstrap';
+import { Link } from 'react-router-dom';
+import Button from '@material-ui/core/Button';
+
+import { FadeInUp } from '../../components/Animations';
+import FancyCard from '../../components/FancyCard';
+import Text from '../../components/Text';
 import ThinkingDude from '../../img/thinking_dude.jpg';
+import Restaurant from '../../img/restaurant.png';
+import Calendar from '../../img/calendar.svg';
+import links from '../../links';
+
 import './Home.scss';
-
-const cards = [
-	{ title: "HELLO", subtitle: "WORLD", content: ""}
-];
-
-const classes = {
-	media: {
-		backgroundSize: "contain",
-	},
-};
 
 class Home extends Component {
     render() {
+    	const primeirosPassos = (
+    		<Link to={links.primeirosPassos}>
+    			<Button size="small" color="primary">
+    				Ver primeiros passos
+    			</Button>
+    		</Link>
+    	);
+
+    	const cardapioRU = (
+    		<a href={links.cardapioPolitecnico}>
+    			<Button size="small" color="primary">
+    				Veja o cardápio de hoje
+    			</Button>
+    		</a>
+    	);
+
+    	const calendarioCEPE = (
+    		<a href={links.calendarioCEPE}>
+    			<Button size="small" color="primary">
+    				Ver calendário
+    			</Button>
+    		</a>
+    	);
+
         return (
             <div className="Home">
             	<Container>
             		<Row>
-            			<Col xs="12" md="4">
-			            	<Card raised>
-			            		<CardMedia image={ThinkingDude} classes={classes} className="Home__primeiros-passos__img" />
-			            		<CardHeader title="HELLO" subheader="WORLD" />
-			            		<CardContent>
-			            			This is content
-			            		</CardContent>
-			            	</Card>
-            			</Col>
-            			<Col xs="12" md="4">
-			            	<Card raised>
-			            		<CardHeader title="HELLO" subheader="WORLD" />
-			            		<CardContent>
-			            			This is content
-			            		</CardContent>
-			            	</Card>
-            			</Col>
-            			<Col xs="12" md="4">
-			            	<Card raised>
-			            		<CardHeader title="HELLO" subheader="WORLD" />
-			            		<CardContent>
-			            			This is content
-			            		</CardContent>
-			            	</Card>
-            			</Col>
+                        <FadeInUp>
+                            <FancyCard buttons={primeirosPassos} image={ThinkingDude} title="Primeiros Passos" subtitle="O que devo fazer?">
+                                <Text align="justify">
+                                    Aqui, temos informações o suficiente para você começar: da matrícula até as primeiras semanas de aula.
+                                </Text>
+                            </FancyCard>
+                        </FadeInUp>
+                        <FadeInUp>
+                            <FancyCard buttons={cardapioRU} image={Restaurant} title="Conheça o RU" subtitle="Restaurante Universitário">
+                                <Text align="justify">
+                                    É sempre bom saber o que será servido no restaurante universitário. O preço é de apenas R$1,30!
+                                </Text>
+                            </FancyCard>
+                        </FadeInUp>
+                        <FadeInUp>
+                            <FancyCard buttons={calendarioCEPE} image={Calendar} title="Calendário Acadêmico" subtitle="Tem datas importantes :)">
+                                <Text align="justify">
+                                    Fique atento ao calendário acadêmico, ele contém datas importantes, como o início do período de matrículas.
+                                </Text>
+                            </FancyCard>
+                        </FadeInUp>
             		</Row>
             	</Container>
             </div>
