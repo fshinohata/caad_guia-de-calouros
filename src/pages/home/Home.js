@@ -9,6 +9,7 @@ import Text from '../../components/Text';
 import ThinkingDude from '../../img/thinking_dude.jpg';
 import Restaurant from '../../img/restaurant.png';
 import Calendar from '../../img/calendar.svg';
+import Info from '../../img/info.png';
 import links from '../../links';
 
 import './Home.scss';
@@ -39,6 +40,14 @@ class Home extends Component {
     		</a>
     	);
 
+      const sobre = (
+    		<Link to={links.sobre}>
+    			<Button size="small" color="primary">
+    				Conheça o Guia
+    			</Button>
+    		</Link>
+    	);
+
         return (
             <div className="Home">
             	<Container>
@@ -62,6 +71,10 @@ class Home extends Component {
                                 <Text align="justify">
                                     Fique atento ao calendário acadêmico, ele contém datas importantes, como o início do período de matrículas.
                                 </Text>
+                            </FancyCard>
+                        </FadeInUp>
+                        <FadeInUp>
+                            <FancyCard buttons={sobre} image={Info} title="Sobre o Guia">
                             </FancyCard>
                         </FadeInUp>
             		</Row>

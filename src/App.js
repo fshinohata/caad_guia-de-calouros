@@ -7,6 +7,7 @@ import links from './links';
 import Layout from './components/Layout';
 import Home from './pages/home/Home';
 import FirstSteps from './pages/firstSteps/FirstSteps';
+import About from './pages/about/About';
 
 class App extends Component {
 	render() {
@@ -18,6 +19,7 @@ class App extends Component {
 					<Switch>
 						<Route exact path={links.home} component={Home} />
 						<Route exact path={links.primeirosPassos} component={FirstSteps} />
+						<Route exact path={links.sobre} component={About} />
 						<Route render={() => <div>Not Found</div>} />
 					</Switch>
 					{/*</AnimatedSwitch>*/}

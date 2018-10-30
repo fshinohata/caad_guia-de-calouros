@@ -4,6 +4,7 @@ const links = {
 	calendarioCEPE: "http://caad.inf.ufpr.br/guia/files/CEPE4915.pdf",
 	home: `/`,
 	primeirosPassos: `/primeiros-passos`,
+	sobre: `/sobre`,
 };
 
 export default links;
