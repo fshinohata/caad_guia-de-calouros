@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
-import { Col } from 'reactstrap';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardContent from '@material-ui/core/CardContent';
-import CardHeader from '@material-ui/core/CardHeader';
+import { Grid, Card } from "semantic-ui-react";
 
 import './ExpansiveCard.scss';
 
@@ -21,22 +17,23 @@ class ExpansiveCard extends Component {
 		});
 	}
 	render() {
-		const { title, subtitle, xs, sm, md, lg } = this.props;
+		const { title, subtitle } = this.props;
 		return (
-			<Col xs={xs || 12} sm={sm} md={md || 4} lg={lg} className="ExpansiveCard">
-            	<Card raised className="ExpansiveCard__Card">
-            		<CardActionArea className="ExpansiveCard__CardActionArea" onClick={this.toggleContent}>
-	            		<CardHeader title={title} subheader={subtitle} />
-	            		<CardContent>
-	            		{
-	            			this.state.showContent ?
-	            				this.props.children :
-	            				null
-	            		}
-	            		</CardContent>
-            		</CardActionArea>
+			<Grid.Column className="ExpansiveCard">
+            	<Card className="ExpansiveCard_Card" onClick={this.toggleContent}>
+					<Card.Content>
+						<Card.Header>{title}</Card.Header>
+						<Card.Meta>
+							<span className="date">{subtitle}</span>
+						</Card.Meta>
+						{
+							this.state.showContent
+							? this.props.children
+							: null
+						}
+					</Card.Content>
             	</Card>
-			</Col>
+			</Grid.Column>
 		);
 	}
 }

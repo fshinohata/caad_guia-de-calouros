@@ -1,84 +1,74 @@
 import React, { Component } from 'react';
-import { Container, Row } from 'reactstrap';
-import { Link } from 'react-router-dom';
-import Button from '@material-ui/core/Button';
+// import { Link } from 'react-router-dom';
+import { HashLink as Link }  from "react-router-hash-link";
 
+import { Grid, Container, Header } from "semantic-ui-react";
 import { FadeInUp } from '../../components/Animations';
 import FancyCard from '../../components/FancyCard';
 import Text from '../../components/Text';
 import ThinkingDude from '../../img/thinking_dude.jpg';
 import Restaurant from '../../img/restaurant.png';
 import Calendar from '../../img/calendar.svg';
+import Map from "../../img/map.png";
 import Info from '../../img/info.png';
 import links from '../../links';
+import env from "../../env.json";
 
 import './Home.scss';
 
 class Home extends Component {
     render() {
-    	const primeirosPassos = (
-    		<Link to={links.primeirosPassos}>
-    			<Button size="small" color="primary">
-    				Ver primeiros passos
-    			</Button>
-    		</Link>
-    	);
-
-    	const cardapioRU = (
-    		<a href={links.cardapioPolitecnico}>
-    			<Button size="small" color="primary">
-    				Veja o cardápio de hoje
-    			</Button>
-    		</a>
-    	);
-
-    	const calendarioCEPE = (
-    		<a href={links.calendarioCEPE}>
-    			<Button size="small" color="primary">
-    				Ver calendário
-    			</Button>
-    		</a>
-    	);
-
-      const sobre = (
-    		<Link to={links.sobre}>
-    			<Button size="small" color="primary">
-    				Conheça o Guia
-    			</Button>
-    		</Link>
-    	);
-
         return (
             <div className="Home">
             	<Container>
-            		<Row>
+                    <Grid className="flex jc-c">
                         <FadeInUp>
-                            <FancyCard buttons={primeirosPassos} image={ThinkingDude} title="Primeiros Passos" subtitle="O que devo fazer?">
+                            <FancyCard buttons={<Link to={links.primeirosPassos}>Ver primeiros passos</Link>} image={ThinkingDude} title="Primeiros Passos" subtitle="O que devo fazer?">
                                 <Text align="justify">
                                     Aqui, temos informações o suficiente para você começar: da matrícula até as primeiras semanas de aula.
                                 </Text>
                             </FancyCard>
                         </FadeInUp>
                         <FadeInUp>
-                            <FancyCard buttons={cardapioRU} image={Restaurant} title="Conheça o RU" subtitle="Restaurante Universitário">
+                            <FancyCard buttons={<a href={links.cardapioPolitecnico} target="_blank">Veja o cardápio de hoje</a>} image={Restaurant} title="Conheça o RU" subtitle="Restaurante Universitário">
                                 <Text align="justify">
                                     É sempre bom saber o que será servido no restaurante universitário. O preço é de apenas R$1,30!
                                 </Text>
                             </FancyCard>
                         </FadeInUp>
                         <FadeInUp>
-                            <FancyCard buttons={calendarioCEPE} image={Calendar} title="Calendário Acadêmico" subtitle="Tem datas importantes :)">
+                            <FancyCard buttons={<a href={links.calendarioCEPE} target="_blank">Ver calendário</a>} image={Calendar} title="Calendário Acadêmico" subtitle="Tem datas importantes :)">
                                 <Text align="justify">
                                     Fique atento ao calendário acadêmico, ele contém datas importantes, como o início do período de matrículas.
                                 </Text>
                             </FancyCard>
                         </FadeInUp>
                         <FadeInUp>
-                            <FancyCard buttons={sobre} image={Info} title="Sobre o Guia">
+                            <FancyCard buttons={<Link to={links.sobre}>Vai um pouco de história? :)</Link>} image={Info} title="Sobre este guia" subtitle="...e o centro acadêmico">
+                                <Text align="justify">
+                                    Se quiser conhecer um pouco mais sobre a gente, clique no link abaixo!
+                                </Text>
                             </FancyCard>
                         </FadeInUp>
-            		</Row>
+                        <FadeInUp>
+                            <FancyCard buttons={<Link to="#mapa">Veja o mapa</Link>} image={Map} title="Mapa do Centro Politécnico" subtitle="Para não se perder!">
+                                <Text align="justify">
+                                    É sempre bom conhecer o lugar no qual você vai passar pelo menos quatro anos, né?
+                                </Text>
+                            </FancyCard>
+                        </FadeInUp>
+                    </Grid>
             	</Container>
+                <Container style={{ marginTop: 50 }}>
+                    <Header id="mapa" as="h2">Mapa do Centro Politécnico</Header>
+                    <iframe
+                        title="Mapa do Centro Politécnico - Curitiba, PR"
+                        className="Home_map"
+                        frameBorder={0} style={{ border:0 }}
+                        src={`https://www.google.com/maps/embed/v1/place?key=${env.googleApiKey}&q=UFPR+Polytechnic+Center`}
+                        allowFullScreen>
+                    </iframe>
+                </Container>
             </div>
         );
     }
