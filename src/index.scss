@@ -48,6 +48,18 @@ a, a:hover, a:focus, a:active, a:visited {
 	}
 }
 
+.flex {
+	display: flex;
+
+	&.ai-c {
+		align-items: center;
+	}
+
+	&.jc-c {
+		justify-content: center;
+	}
+}
+
 @for $i from 1 to 101 {
 	.flex-#{$i} {
 		flex: $i;

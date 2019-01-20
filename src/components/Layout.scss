@@ -2,6 +2,6 @@
 
 .Layout {
   &__main {
-    margin-top: $navbar_height;
+    margin-top: #{$navbar-height + 32px};
   }
 }

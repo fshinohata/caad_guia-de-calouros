@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
 import links from './links';
 
-// import { AnimatedSwitch } from './components/Animations';
 import Layout from './components/Layout';
 import Home from './pages/home/Home';
 import FirstSteps from './pages/firstSteps/FirstSteps';
@@ -15,14 +14,12 @@ class App extends Component {
 		return (
 			<Router basename={basename}>
 				<Layout>
-					{/*<AnimatedSwitch>*/}
 					<Switch>
 						<Route exact path={links.home} component={Home} />
 						<Route exact path={links.primeirosPassos} component={FirstSteps} />
 						<Route exact path={links.sobre} component={About} />
 						<Route render={() => <div>Not Found</div>} />
 					</Switch>
-					{/*</AnimatedSwitch>*/}
 				</Layout>
 			</Router>
 		);

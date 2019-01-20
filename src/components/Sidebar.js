@@ -37,10 +37,10 @@ export default Sidebar;
 
 const SidebarContent = ({ onSetOpen }) => (
     <div className="Sidebar__items">
-        <Link onClick={() => onSetOpen(false)} className="Sidebar__item" to="/">Página Inicial</Link>
-        <Link onClick={() => onSetOpen(false)} className="Sidebar__item" to="/primeiros-passos">Primeiros Passos</Link>
-        <a onClick={() => onSetOpen(false)} className="Sidebar__item" href={links.cardapioPolitecnico}>Cardápio do RU</a>
-        {/*<Link onClick={() => onSetOpen(false)} className="Sidebar__item" to="/">Mapa do Politécnico</Link>*/}
-        <a onClick={() => onSetOpen(false)} className="Sidebar__item -small" href={links.calendarioCEPE}>Calendário Acadêmico</a>
+        <Link onClick={() => onSetOpen(false)} className="Sidebar__item" to={links.home}>Página Inicial</Link>
+        <Link onClick={() => onSetOpen(false)} className="Sidebar__item" to={links.primeirosPassos}>Primeiros Passos</Link>
+        <a onClick={() => onSetOpen(false)} target="_blank" className="Sidebar__item" href={links.cardapioPolitecnico}>Cardápio do RU</a>
+        <a onClick={() => onSetOpen(false)} target="_blank" className="Sidebar__item -small" href={links.calendarioCEPE}>Calendário Acadêmico</a>
+        <Link onClick={() => onSetOpen(false)} className="Sidebar__item" to={links.sobre}>Sobre</Link>
     </div>
 );
