@@ -19,13 +19,13 @@ class FirstSteps extends Component {
 		            				Tem alguns jeitos de saber que você passou.
 		            			</p>
 		            			<p>
-									Muita gente gosta de ir lá na Praça Santos de Andrade pra descobrir. Sabe, aquela na frente do Teatro Guaíra? É que no dia da divulgação dos resultados costumam distribuir gratuitamente jornais com os resultados pro pessoal que passa por lá. Vai bastante gente, trazendo família, amigos ou sozinha mesmo. Alguns se sujam um pouco com tinta, farinha e outras coisas. Tem gente que não gosta de participar e sai limpinha. Cada um é cada um.
+									Muita gente gosta de ir lá na <b>Praça Santos de Andrade</b> pra descobrir. Sabe, aquela na frente do Teatro Guaíra? Então, no dia da divulgação dos aprovados costumam distribuir gratuitamente jornais com os resultados pro pessoal que passa por lá. Muitas pessoas vão, trazendo família, amigos ou sozinha mesmo. Alguns se sujam um pouco com tinta, farinha e outras coisas. Tem gente que não gosta de participar e sai limpinha. Cada um é cada um.
 								</p>
 								<p>
-									Mas se você quer mais emoção, vá para o banho de lama. O lugar muda de ano a ano, mas não é difícil descobrir onde é que vai ser. Eles divulgam alguns dias antes da saída do resultado. Indo lá, você vai encontrar alguns dos seus veteranos e também alguns dos seus colegas que acabaram de passar. Não se esqueça de pegar os contatos! Você pode conferir o resultado lá mesmo e, se for o caso, vão te sujar bastante.
+									Mas se você quer mais emoção, vá para o <b>banho de lama</b>. Geralmente acontece no Campus Cabral (Campus de Ciências Agrárias) da UFPR. Porém, o lugar pode mudar de ano a ano, mas não é difícil descobrir onde é que vai ser. Eles divulgam alguns dias antes da saída do resultado. Indo lá, você vai encontrar alguns dos seus veteranos e também alguns dos seus colegas que acabaram de passar. Não se esqueça de pegar os contatos! Você pode conferir o resultado lá mesmo e, se for o caso, vão te sujar bastante.
 								</p>
 								<p>
-									Enfim, você também pode entrar no site do Núcleo de Concursos da UFPR no dia em que saem os resultados que eles vão estar logo ali na primeira página, separados por curso. Prático, rápido, sem grandes emoções. Mas eficaz. (e uma pá de gente vê por aí, mesmo)
+									Enfim, você também pode entrar no site do <b><a href="http://portal.nc.ufpr.br/PortalNC/Home">Núcleo de Concursos</a> da UFPR</b> no dia em que saem os resultados que eles vão estar logo ali na primeira página, separados por curso. Prático, rápido, sem grandes emoções. Mas eficaz (e uma pá de gente vê por aí, mesmo).
 								</p>
 	            			</Text>
 	            		</ExpansiveCard>
@@ -34,25 +34,25 @@ class FirstSteps extends Component {
 	            		<ExpansiveCard title="Matrícula" subtitle="Como é o dia da matrícula?">
 	            			<Text>
 	            				<h5>O que, onde e quando</h5>
-								<p>Você terá que levar documentos pra se matricular! (ver no site do núcleo de concursos)</p>
-								<p>Cada curso tem data e hora marcados (ver no site do núcleo de concursos)
-									Normalmente, acontece no Prédio Histórico da UFPR (que fica na praça Santos de Andrade, numa das pontas da Rua XV de Novembro, em frente ao Teatro Guaíra)</p>
+								<p>Você terá que levar documentos pra se matricular! (ver no site do <b><a href="http://portal.nc.ufpr.br/PortalNC/Home">Núcleo de Concursos</a></b>)</p>
+								<p>Cada curso tem data e hora marcados para efetuar a matrícula.
+									Normalmente, acontece no Prédio Histórico da UFPR (que fica na praça Santos de Andrade, em frente ao Teatro Guaíra)</p>
 								<h5>Como é o dia</h5>
 								<p>Um dia tranquilo! :)</p>
 								<ul>
-									<li>Apenas uma entrada (a da frente do prédio) e uma saída (a do lado do prédio)</li>
+									<li>Apenas uma entrada (a do lado do prédio) e uma saída (a da frente do prédio)</li>
 									<li>Acompanhantes não passarão - no prédio, só calouros, funcionários e voluntários</li>
-									<li>Você será enfileirado com seus colegas de curso - aproveite pra conhecer e conversar!</li>
+									<li>Você será enfileirado com seus colegas de curso - aproveite pra conhecê-los e conversar!</li>
 									<li>Sempre terá uma placa ou alguém indicando pra onde você deve seguir</li>
-									<li>Você pode receber folhetos, cartilhas, livretos, camiseta e outros materiais pra calouros. Boa ideia levar algo pra guardar tudo isso.</li>
-									<li>Nesse dia você também tira a foto pra carteirinha de estudante. Esteja apresentável. (eu disse apresentável, não divx, ok?)</li>
+									<li>Você pode receber folhetos, cartilhas, livretos, camiseta e outros materiais para calouros. Uma boa dica é levar algo pra guardar tudo isso (vulgo pasta)</li>
+									<li>Nesse dia você também tira a foto pra carteirinha de estudante. Esteja apresentável. (eu disse apresentável, não divo(a), ok?)</li>
 								</ul>
 								<h5>Trote?</h5>
 								<ul>
-									<li>Na saída alguns veteranos estarão te esperando</li>
-									<li>Se eles tiverem algum folheto em mãos, pegue - o folheto é importante</li>
-									<li>Se você não quiser trote, só ignore. Se te pararem, recuse e continue andando. No geral, os veteranos vão fazer uma pressãozinha, mas respeitam a sua decisão.</li>
-									<li>Se você resolver participar - o que é bacaninha - aproveite bastante a experiência! Não é todo mundo que tem essa chance, sabia?</li>
+									<li>Na saída alguns veteranos estarão te esperando com no máximo <b>tinta guache</b></li>
+									<li>Se eles tiverem algum folheto em mãos, pegue - o <b>folheto é importante!!</b></li>
+									<li>Se você não quiser ser pintado(a), só ignore. Se te pararem, recuse e continue andando. No geral, os veteranos vão fazer uma pressãozinha, mas respeitam a sua decisão.</li>
+									<li>Se você resolver participar - o que é bacaninha - aproveite! São tiradas fotos pra guardar de lembrança esse momento especial de matrícula feita: "AGORA SOU FEDERAL!"</li>
 								</ul>
 	            			</Text>
 	            		</ExpansiveCard>
@@ -68,7 +68,7 @@ class FirstSteps extends Component {
 								<p>Alguns exemplos de benefícios como aluno da UFPR:</p>
 
 								<ul>
-									<li>Você agora pode utilizar o intercampi gratuitamente! (Ônibus que passa em todos os Campi da UFPR). Você encontra os horários do intercampi aqui.</li>
+									<li>Você agora pode utilizar o intercampi gratuitamente! (Ônibus que passa em todos os Campi da UFPR). Você encontra os horários do intercampi <a href="http://www.pra.ufpr.br/portal/centran/sobre/onibus-intercampi/">aqui.</a></li>
 									<li>
 										A Pró-Reitoria de Assuntos Estudantis (PRAE) oferece uma série de bolsas aos alunos que necessitam de auxilio financeiro. Entre elas estão:
 										<ul>
@@ -88,16 +88,15 @@ class FirstSteps extends Component {
 	            			<Text>
 	            				<p>Você provavelmente já ouviu falar que vai rolar a semana dos calouros, mas caso nunca tenha ouvido falar, fique tranquilo: vamos explicar tudo o que você precisa saber (ou pelo menos te dar as informações necessárias para se virar xD).</p>
 
-								<p>A semana de Calouros é organizada pelo Programa de Ensino Tutorial de Computação (PET Computação). Nessa semana, você calouro não terá aulas; e muito importante: NÃO LEVARÁ TROTE. (é verdade mesmo, não se preocupe).</p>
-
+								<p>A semana de Calouros é organizada pelo Programa de Ensino Tutorial de Computação (PET Computação) e é o momento de recepção de vocês, calouros que estão lendo. Nessa semana, você calouro não terá aulas; e muito importante: NÃO LEVARÁ TROTE. (é verdade mesmo, não se preocupe).</p>
 								<blockquote>“Aah então vou fazer o que na faculdade?!”</blockquote>
 
 								<p>Você vai:</p>
 
 								<ul>
 									<li>Fazer um tour da faculdade: conhecer o campus é muito importante, assim você não ficará (tão) perdido quando falarem que sua aula é na espinha de peixe, quando for almoçar no RU, etc.</li>
-									<li>Ver palestras interessantes: com pessoas que já estão formadas, que atuam na área, com pessoas de dentro da faculdade, vai conhecer o coordenador do curso, vai conhecer o pessoal do Centro de Estudos de Informatica (CAAD), do PET, da Empresa Junior de computação (ECOMP), do C3SL, e muito mais.</li>
-									<li>Aprender algumas coisas: você vai passar um tempo nos laboratórios de informática aprendendo a usar algumas ferramentas que serão importantes durante o curso. E outras coisas.</li>
+									<li>Ver palestras interessantes: com pessoas que já estão formadas, que atuam na área, com pessoas de dentro da faculdade, vai conhecer o coordenador do curso, vai conhecer o pessoal do Centro de Estudos de Informatica (CAAD), do PET, da Empresa Junior de computação (ECOMP), dos grupos de pesquisa, e muito mais.</li>
+									<li>Aprender algumas coisas: você vai passar um tempo nos laboratórios de informática aprendendo a usar algumas ferramentas que serão importantes durante o curso. Acontecerá, por exemplo, o curso de Linux (sistema operacional usado nos laboratórios do departamento e que você irá usar durante o curso inteiro)</li>
 									<li>Socializar (um pouco): vai ter a chance de fazer novos colegas e participar de gincanas.</li>
 								</ul>
 								<p>Mais informações sobre a semana de calouros no site do <a href={links.semanaDosCalouros}>PET Computação</a>.</p>
@@ -108,11 +107,7 @@ class FirstSteps extends Component {
 						<ExpansiveCard title="Primeira semana de aulas" subtitle="Como enfrentar a primeira semana de aulas?">
 							<Text align="justify">
 							<p>
-								Durante a primeira semana acontece a recepção de vocês, calouros que estão lendo agora, aonde nós apresentamos a universidade para vocês, desde coisas que vocês usaram muito até coisas que vocês não usarão. haverão palestras introdutórias ao curso, a apresentação do chefe do departamento, do coordenador do curso, do nosso centro acadêmico (CAAD) e do PET computação, também é ofertado um curso de Linux básico, pois é o sistema operacional usado nos computadores do laboratório e muitos de vocês não tem familiaridade com o mesmo.
-							</p>
-
-							<p>
-								Logo após a semana dos calouros promovida pelo PET vem a primeira semana de aula, normalmente vocês serão informados sobre os horários de aula, salas e professores antes de começar.
+								Logo após a semana dos calouros promovida pelo PET (veja o card anterior) vem a primeira semana de aula, normalmente vocês serão informados sobre os horários de aula, salas e professores antes de começar (mas se ainda tiver dúvida, os veteranos ou os secretários do DInf podem te ajudar).
 							</p>
 
 							<p>
@@ -120,7 +115,7 @@ class FirstSteps extends Component {
 							</p>
 
 							<p>
-								O trote é uma das formas de fazer a integração entre vocês calouros , e nós veteranos e até mesmo a integração entre vocês.
+								O trote é uma das formas de fazer a integração entre vocês calouros e nós veteranos.
 							</p>
 							</Text>
 						</ExpansiveCard>
@@ -143,7 +138,7 @@ class FirstSteps extends Component {
 							<Text align="justify">
 							<h5>Comer</h5>
 							<p>
-								Temos o restaurante universitário (carinhosamente chamado de RU &lt;3) que oferece café da manhã a R$0,50 e almoço e jantar a R$1,30, e que apesar do preço tem uma ótima qualidade. Além disso temos 3 cantinas: uma no biológicas (longe :( ), uma dentro da espinha de peixe (marcada aqui no mapa) e outra perto do RU. Sem falar do Shopping Jardim das Américas, que é pertinho do poli e que tem alguns lugares para comer que dão desconto para aluno da UFPR (leve carteirinha ou comprovante de matrícula).
+								Temos o restaurante universitário (carinhosamente chamado de RU &lt;3) que oferece café da manhã a R$0,50 e almoço e jantar a R$1,30, e que apesar do preço tem uma ótima qualidade. Além disso temos 3 cantinas mais próximas: uma dentro da espinha de peixe (marcada no mapa) e 2 outras perto do RU. Sem falar do Shopping Jardim das Américas, que é pertinho do poli e que tem alguns lugares para comer que dão desconto para aluno da UFPR (leve carteirinha ou comprovante de matrícula).
 							</p>
 
 							<h5>Bebedouros e banheiros</h5>
@@ -152,7 +147,7 @@ class FirstSteps extends Component {
 							</p>
 
 							<p>
-								Tem um bebedouro na parte de cima do dinf, e banheiro só na espinha de peixe ou no bloco das PC’s
+								Tem um bebedouro na parte de cima do dinf, e banheiro só na espinha de peixe ou nos blocos PC, CT e PA (todos demarcados no mapa).
 							</p>
 
 							<p>
@@ -163,9 +158,8 @@ class FirstSteps extends Component {
 							<p>
 								Caso algum de vocês passem mal ou se machuquem enquanto estão programando, temos a CASA 3 que pode auxiliar vocês em casos de pouca gravidade.
 							</p>
-
-							<p>
-								Caso você veja um amiguinho passando mal, o auxilie levando para a casa 3, lá eles saberão o q fazer :)
+              <p>
+              Vocês vão conhecer a casa 3 e tantos outros lugares importantes no tour pelo campus na semana dos calouros ;)
 							</p>
 							</Text>
 						</ExpansiveCard>
@@ -179,24 +173,6 @@ class FirstSteps extends Component {
 
 							<p>
 								Os seus veteranos são pessoas que nem você, que nem os teus colegas. Eles apenas tem mais experiência no curso e no ambiente universitário. Eles podem ser fontes muito úteis de informação. Eles podem indicar professores, moradias, estágios, festas, etc. Caso você precise de alguma dessas informações eles podem ser facilmente encontrados no CAAD e nos labs.
-							</p>
-							</Text>
-						</ExpansiveCard>
-					</StackUp>
-					<StackUp>
-						<ExpansiveCard title="Coisas que você ganha como aluno de BCC" subtitle="Recursos que o Departamento de Informática disponibiliza aos alunos.">
-							<Text align="justify">
-							<p>
-								Como aluno BCC você ganha acesso a 3 laboratórios no dinf por meio da conta para logar no sistema que será entregue na primeira semana de aula. Além de ter sua conta para uso dentro da universidade, o dinf ainda disponibiliza um dominio online, uma conta de email e uma conta no gitlab (tipo o github mas do dinf) para cada aluno.
-							</p>
-							</Text>
-						</ExpansiveCard>
-					</StackUp>
-					<StackUp>
-						<ExpansiveCard title="Acho que faltou alguma coisa" subtitle="Tem alguma sugestão para melhorar o guia?">
-							<Text align="justify">
-							<p>
-								Quaisquer dúvidas ou sugestões, não hesite em falar com os membros do Centro Acadêmico, pessoalmente ou via email (nosso email está na <Link to={links.sobre}>página sobre</Link>).
 							</p>
 							</Text>
 						</ExpansiveCard>

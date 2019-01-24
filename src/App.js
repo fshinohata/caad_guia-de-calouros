@@ -7,6 +7,7 @@ import Layout from './components/Layout';
 import Home from './pages/home/Home';
 import FirstSteps from './pages/firstSteps/FirstSteps';
 import About from './pages/about/About';
+import MapPoli from './pages/mapPoli/MapPoli';
 
 class App extends Component {
 	render() {
@@ -18,6 +19,7 @@ class App extends Component {
 						<Route exact path={links.home} component={Home} />
 						<Route exact path={links.primeirosPassos} component={FirstSteps} />
 						<Route exact path={links.sobre} component={About} />
+						<Route exact path={links.mapa} component={MapPoli} />
 						<Route render={() => <div>Not Found</div>} />
 					</Switch>
 				</Layout>

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 import { HashLink as Link }  from "react-router-hash-link";
 
-import { Grid, Container, Header } from "semantic-ui-react";
+import { Grid, Container } from "semantic-ui-react";
 import { FadeInUp } from '../../components/Animations';
 import FancyCard from '../../components/FancyCard';
 import Text from '../../components/Text';
@@ -12,7 +12,6 @@ import Calendar from '../../img/calendar.svg';
 import Map from "../../img/map.png";
 import Info from '../../img/info.png';
 import links from '../../links';
-import env from "../../env.json";
 
 import './Home.scss';
 
@@ -51,7 +50,7 @@ class Home extends Component {
                             </FancyCard>
                         </FadeInUp>
                         <FadeInUp>
-                            <FancyCard buttons={<Link to="#mapa">Veja o mapa</Link>} image={Map} title="Mapa do Centro Politécnico" subtitle="Para não se perder!">
+                            <FancyCard buttons={<Link to={links.mapa}>Veja o mapa</Link>} image={Map} title="Mapa do Centro Politécnico" subtitle="Para não se perder!">
                                 <Text align="justify">
                                     É sempre bom conhecer o lugar no qual você vai passar pelo menos quatro anos, né?
                                 </Text>
@@ -59,19 +58,10 @@ class Home extends Component {
                         </FadeInUp>
                     </Grid>
             	</Container>
-                <Container style={{ marginTop: 50 }}>
-                    <Header id="mapa" as="h2">Mapa do Centro Politécnico</Header>
-                    <iframe
-                        title="Mapa do Centro Politécnico - Curitiba, PR"
-                        className="Home_map"
-                        frameBorder={0} style={{ border:0 }}
-                        src={`https://www.google.com/maps/embed/v1/place?key=${env.googleApiKey}&q=UFPR+Polytechnic+Center`}
-                        allowFullScreen>
-                    </iframe>
-                </Container>
             </div>
         );
     }
 }
 
+//`https://www.google.com/maps/embed/v1/place?key=${env.googleApiKey}&q=UFPR+Polytechnic+Center`
 export default Home;

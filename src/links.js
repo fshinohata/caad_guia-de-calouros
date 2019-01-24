@@ -6,6 +6,7 @@ const links = {
 	home: `/`,
 	primeirosPassos: `/primeiros-passos`,
 	sobre: `/sobre`,
+	mapa: `/mapa-poli`,
 };
 
 export default links;
