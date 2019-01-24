@@ -20,7 +20,7 @@ class About extends Component {
 						</p>
 						<p>
 							O Guia do Calouro foi idealizado pela gestão Ranauê e sua primeira versão foi implementada em 2015.
-							2018 é o ano de sua restauração, implementada pela gestão AutoCAAD com a ajuda do mestre Fernando Shinohata.
+							2019 foi o ano de sua restauração, implementada pela gestão AutoCAAD com a ajuda do mestre Fernando Shinohata.
 						</p>
 						<p>
 							Para saber mais sobre a história do Centro Acadêmico Alexandre Direne (antigo Centro de Estudos de Informática) só clicar <a target="_blank" href={links.historiaCAAD}> aqui </a>.
