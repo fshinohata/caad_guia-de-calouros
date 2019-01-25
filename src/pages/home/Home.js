@@ -11,6 +11,9 @@ import Restaurant from '../../img/restaurant.png';
 import Calendar from '../../img/calendar.svg';
 import Map from "../../img/map.png";
 import Info from '../../img/info.png';
+import Computer from '../../img/computer.png';
+import LogoDinf from '../../img/logoDinf.jpg';
+import LogoUFPR from '../../img/logoUfpr.jpg';
 import links from '../../links';
 
 import './Home.scss';
@@ -53,6 +56,27 @@ class Home extends Component {
                             <FancyCard buttons={<Link to={links.mapa}>Veja o mapa</Link>} image={Map} title="Mapa do Centro Politécnico" subtitle="Para não se perder!">
                                 <Text align="justify">
                                     É sempre bom conhecer o lugar no qual você vai passar pelo menos quatro anos, né?
+                                </Text>
+                            </FancyCard>
+                        </FadeInUp>
+                        <FadeInUp>
+                            <FancyCard buttons={<Link to={"#bcc"}>Vem ver as diferenças</Link>} image={Computer} title="O curso" subtitle="BCC é o curso certo para mim?">
+                                <Text align="justify">
+                                    Ciência da Computação, Engenharia da Computação ou Sistemas de Informação (e outras variantes)?
+                                </Text>
+                            </FancyCard>
+                        </FadeInUp>
+                        <FadeInUp>
+                            <FancyCard buttons={<Link to={"#dinf"}>Conheça o DInf</Link>} image={LogoDinf} title="Departamento de Informática" subtitle="Porque escolher DInf UFPR?">
+                                <Text align="justify">
+                                    Saiba o que você "ganha" sendo estudante no Departamento de Informática da UFPR.
+                                </Text>
+                            </FancyCard>
+                        </FadeInUp>
+                        <FadeInUp>
+                            <FancyCard buttons={<Link to={"#ufpr"}>Conheça a UFPR</Link>} image={LogoUFPR} title="Universidade Federal do Paraná" subtitle="Porque escolher UFPR?">
+                                <Text align="justify">
+                                    Conheça a melhor do Paraná!
                                 </Text>
                             </FancyCard>
                         </FadeInUp>
