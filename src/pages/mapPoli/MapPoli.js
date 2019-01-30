@@ -8,8 +8,8 @@ import './MapPoli.scss';
 class MapPoli extends Component {
     render() {
         return (
-          <div>
-              <Container className="Info">
+            <Container className="Info">
+                  <Header as="h2">Mapa do Centro Politécnico</Header>
                   <Text align="justify">
                       <p>
                       As linhas de ônibus da URBS que passam próximas ao Centro Politécnico são:
@@ -24,18 +24,14 @@ class MapPoli extends Component {
                           <li>Universidades (165)</li>
                       </ul>
                   </Text>
-                </Container>
-                <Container style={{ marginTop: 50 }}>
-                    <Header as="h2">Mapa do Centro Politécnico</Header>
-                    <iframe
-                        title="Mapa do Centro Politécnico - Curitiba, PR"
-                        className="MapPoli"
-                        frameBorder={0} style={{ border:0 }}
-                        src={`https://www.google.com/maps/embed/v1/place?key=${env.googleApiKey}&q=UFPR+Polytechnic+Center`}
-                        allowFullScreen>
-                    </iframe>
-                </Container>
-            </div>
+                  <iframe
+                      title="Mapa do Centro Politécnico - Curitiba, PR"
+                      className="MapPoli"
+                      frameBorder={0} style={{ border:0 }}
+                      src={`https://www.google.com/maps/embed/v1/place?key=${env.googleApiKey}&q=UFPR+Polytechnic+Center`}
+                      allowFullScreen>
+                  </iframe>
+            </Container>
         );
     }
 }
