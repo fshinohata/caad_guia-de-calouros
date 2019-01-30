@@ -7,6 +7,9 @@ const links = {
 	primeirosPassos: `/primeiros-passos`,
 	sobre: `/sobre`,
 	mapa: `/mapa-poli`,
+	curso: `/curso`,
+	dinf: `/dinf`,
+	ufpr: `/ufpr`,
 };
 
 export default links;
