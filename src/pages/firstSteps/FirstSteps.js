@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { HashLink as Link } from "react-router-hash-link";
 import { Container, Grid } from "semantic-ui-react";
 
 import links from '../../links';
@@ -19,13 +18,13 @@ class FirstSteps extends Component {
 		            				Tem alguns jeitos de saber que você passou.
 		            			</p>
 		            			<p>
-									Muita gente gosta de ir lá na <b>Praça Santos de Andrade</b> pra descobrir. Sabe, aquela na frente do Teatro Guaíra? Então, no dia da divulgação dos aprovados costumam distribuir gratuitamente jornais com os resultados pro pessoal que passa por lá. Muitas pessoas vão, trazendo família, amigos ou sozinha mesmo. Alguns se sujam um pouco com tinta, farinha e outras coisas. Tem gente que não gosta de participar e sai limpinha. Cada um é cada um.
+									Muita gente gosta de ir lá na <span style={{ fontWeight: "bold" }}>Praça Santos de Andrade</span> pra descobrir. Sabe, aquela na frente do Teatro Guaíra? Então, no dia da divulgação dos aprovados costumam distribuir gratuitamente jornais com os resultados pro pessoal que passa por lá. Muitas pessoas vão, trazendo família, amigos ou sozinha mesmo. Alguns se sujam um pouco com tinta, farinha e outras coisas. Tem gente que não gosta de participar e sai limpinha. Cada um é cada um.
 								</p>
 								<p>
-									Mas se você quer mais emoção, vá para o <b>banho de lama</b>. Geralmente acontece no Campus Cabral (Campus de Ciências Agrárias) da UFPR. Porém, o lugar pode mudar de ano a ano, mas não é difícil descobrir onde é que vai ser. Eles divulgam alguns dias antes da saída do resultado. Indo lá, você vai encontrar alguns dos seus veteranos e também alguns dos seus colegas que acabaram de passar. Não se esqueça de pegar os contatos! Você pode conferir o resultado lá mesmo e, se for o caso, vão te sujar bastante.
+									Mas se você quer mais emoção, vá para o <span style={{ fontWeight: "bold" }}>banho de lama</span>. Geralmente acontece no Campus Cabral (Campus de Ciências Agrárias) da UFPR. Porém, o lugar pode mudar de ano a ano, mas não é difícil descobrir onde é que vai ser. Eles divulgam alguns dias antes da saída do resultado. Indo lá, você vai encontrar alguns dos seus veteranos e também alguns dos seus colegas que acabaram de passar. Não se esqueça de pegar os contatos! Você pode conferir o resultado lá mesmo e, se for o caso, vão te sujar bastante.
 								</p>
 								<p>
-									Enfim, você também pode entrar no site do <b><a href="http://portal.nc.ufpr.br/PortalNC/Home">Núcleo de Concursos</a> da UFPR</b> no dia em que saem os resultados que eles vão estar logo ali na primeira página, separados por curso. Prático, rápido, sem grandes emoções. Mas eficaz (e uma pá de gente vê por aí, mesmo).
+									Enfim, você também pode entrar no site do <span style={{ fontWeight: "bold" }}><a href="http://portal.nc.ufpr.br/PortalNC/Home">Núcleo de Concursos</a> da UFPR</span> no dia em que saem os resultados que eles vão estar logo ali na primeira página, separados por curso. Prático, rápido, sem grandes emoções. Mas eficaz (e uma pá de gente vê por aí, mesmo).
 								</p>
 	            			</Text>
 	            		</ExpansiveCard>
@@ -34,9 +33,8 @@ class FirstSteps extends Component {
 	            		<ExpansiveCard title="Matrícula" subtitle="Como é o dia da matrícula?">
 	            			<Text>
 	            				<h5>O que, onde e quando</h5>
-								<p>Você terá que levar documentos pra se matricular! (ver no site do <b><a href="http://portal.nc.ufpr.br/PortalNC/Home">Núcleo de Concursos</a></b>)</p>
-								<p>Cada curso tem data e hora marcados para efetuar a matrícula.
-									Normalmente, acontece no Prédio Histórico da UFPR (que fica na praça Santos de Andrade, em frente ao Teatro Guaíra)</p>
+								<p>Você terá que levar documentos pra se matricular e cada curso tem data e hora marcados para efetuar a matrícula. (ver no site do <span style={{ fontWeight: "bold" }}><a href="http://portal.nc.ufpr.br/PortalNC/Home">Núcleo de Concursos</a></span>)</p>
+								<p>Normalmente, acontece no Prédio Histórico da UFPR (que fica na praça Santos de Andrade, em frente ao Teatro Guaíra)</p>
 								<h5>Como é o dia</h5>
 								<p>Um dia tranquilo! :)</p>
 								<ul>
@@ -50,9 +48,9 @@ class FirstSteps extends Component {
 								<h5>Trote?</h5>
 								<ul>
 									<li>Na saída alguns veteranos estarão te esperando com no máximo <b>tinta guache</b></li>
-									<li>Se eles tiverem algum folheto em mãos, pegue - o <b>folheto é importante!!</b></li>
+									<li>Se eles tiverem algum folheto em mãos, pegue - o <span style={{ fontWeight: "bold" }}>folheto é importante!!</span></li>
 									<li>Se você não quiser ser pintado(a), só ignore. Se te pararem, recuse e continue andando. No geral, os veteranos vão fazer uma pressãozinha, mas respeitam a sua decisão.</li>
-									<li>Se você resolver participar - o que é bacaninha - aproveite! São tiradas fotos pra guardar de lembrança esse momento especial de matrícula feita: "AGORA SOU FEDERAL!"</li>
+									<li>Se você resolver participar - o que é bacaninha - aproveite! São tiradas fotos pra guardar de lembrança esse momento especial - <span style={{ fontWeight: "bold" }}>AGORA VOCÊ É FEDERAL!</span></li>
 								</ul>
 	            			</Text>
 	            		</ExpansiveCard>
@@ -69,6 +67,7 @@ class FirstSteps extends Component {
 
 								<ul>
 									<li>Você agora pode utilizar o intercampi gratuitamente! (Ônibus que passa em todos os Campi da UFPR). Você encontra os horários do intercampi <a href="http://www.pra.ufpr.br/portal/centran/sobre/onibus-intercampi/">aqui.</a></li>
+                  <li>Você também pode bater aquele rango no Restaurante Universitário por R$0,50 o café da manhã e R$1,30 o almoço ou jantar.</li>
 									<li>
 										A Pró-Reitoria de Assuntos Estudantis (PRAE) oferece uma série de bolsas aos alunos que necessitam de auxilio financeiro. Entre elas estão:
 										<ul>
@@ -107,15 +106,15 @@ class FirstSteps extends Component {
 						<ExpansiveCard title="Primeira semana de aulas" subtitle="Como enfrentar a primeira semana de aulas?">
 							<Text align="justify">
 							<p>
-								Logo após a semana dos calouros promovida pelo PET (veja o card anterior) vem a primeira semana de aula, normalmente vocês serão informados sobre os horários de aula, salas e professores antes de começar (mas se ainda tiver dúvida, os veteranos ou os secretários do DInf podem te ajudar).
+								Logo após a semana dos calouros promovida pelo PET (veja o card anterior) vem a primeira semana de aula. Normalmente vocês serão informados sobre os horários de aula, salas e professores antes de começar (mas se ainda tiver dúvida, os veteranos ou os secretários do DInf podem te ajudar).
 							</p>
 
 							<p>
-								Essa primeira semana de aula também é quando acontece o trote dos calouros; e você pode escolher se vai participar ou não (nenhum de vocês será forçado a participar, se alguém falar o contrário, procure o CAAD ou o PET).
+								Essa primeira semana de aula também é quando acontece o trote dos calouros; e você pode escolher se vai participar ou não (<span style={{ fontWeight: "bold" }}>nenhum de vocês será forçado a participar</span>, se alguém falar o contrário, procure o CAAD ou o PET).
 							</p>
 
 							<p>
-								O trote é uma das formas de fazer a integração entre vocês calouros e nós veteranos.
+								O trote é uma das formas de fazer a integração entre vocês calouros e nós veteranos. São dias temáticos (pijama, praia...) com gincanas que devem ser divertidas principalmente para vocês, calouros.
 							</p>
 							</Text>
 						</ExpansiveCard>

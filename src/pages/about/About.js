@@ -5,6 +5,7 @@ import links from '../../links';
 import { StackUp } from '../../components/Animations';
 import Text from '../../components/Text';
 import Email from '../../img/emailcaad.png';
+import Lucy from '../../img/lucy.jpg';
 
 import "./About.scss";
 
@@ -14,6 +15,7 @@ class About extends Component {
             <StackUp>
 				<Container className="About">
 					<Text align="justify">
+            <img src={Lucy} alt="Mascote do Centro Acadêmico Alexandre Direne" align="left"/>
 						<p>
 							Esse guia é um apanhado de informações interessantes para (futuros) graduandos em Ciência da Computação na Universidade Federal do Paraná.
 							Tem por objetivo auxiliar na preparação e adaptação no ambiente acadêmico e ser um link rápido para sites externos.
@@ -23,7 +25,10 @@ class About extends Component {
 							2019 foi o ano de sua restauração, implementada pela gestão AutoCAAD com a ajuda do mestre Fernando Shinohata.
 						</p>
 						<p>
-							Para saber mais sobre a história do Centro Acadêmico Alexandre Direne (antigo Centro de Estudos de Informática) só clicar <a target="_blank" href={links.historiaCAAD}> aqui </a>.
+							Para você que se pergunta <span style={{ fontWeight: "bold" }}>"O que é esse crânio de background do guia?"</span>: ele compõe a logo do CAAD. O crânio é nosso mascote, que ainda pode ser encontrado na sede do CAAD (mesmo que aos pedaços e manchado). A história diz que esse crânio chegou ao CAAD em meados de 2011, e desde então é o objeto mais querido da sede.
+            </p>
+            <p>
+              Para saber mais sobre a história do Centro Acadêmico Alexandre Direne (antigo Centro de Estudos de Informática) só clicar <a target="_blank" href={links.historiaCAAD}> aqui </a>.
 						</p>
 						<p>
 							Esperamos que esse Guia tenha sido de alguma forma útil desde a escolha do curso até o primeiro ano como Calouro de BCC UFPR.
